@@ -1,9 +1,12 @@
 ﻿using HtmlAgilityPack;
 
-public class Program
+namespace ReviewParser
 {
-	public static void Main()
+	public class Program
 	{
+		public static void Main()
+		{
 
+		}
 	}
 }
