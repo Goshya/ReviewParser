@@ -8,14 +8,12 @@ using System.Net.Http;
 
 namespace ReviewParser
 {
-	public class Review(string url)
+	public class Review(string username, string reviewText, int mark)
 	{
-		public Review() : this("") { }
-		public string Url { get; private set; } = url;
-		public string? Username { get; private set; }
-		public string? ReviewText { get; private set; }
-		public int? Mark {  get; private set; }
-		HttpClient client = new HttpClient();
+		public Review() : this("", "", 0) { }
+		public string? Username { get; private set; } = username;
+		public string? ReviewText { get; private set; } = reviewText;
+		public int? Mark {  get; private set; } = mark;
 
 	}
 }
